@@ -3,6 +3,8 @@ session_start();
 
 if (!empty($_POST["btningresar"])) {
     //echo "Boton precionado";
+    //echo "Boton precionado";
+    //echo "Boton precionado";
     if (!empty($_POST["usuario"]) and !empty($_POST["password"])) {
         $usuario = $_POST["usuario"];
         $password = $_POST["password"];
