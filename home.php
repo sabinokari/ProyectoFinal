@@ -197,7 +197,7 @@ if (!isset($_SESSION["nombres"])) {
         xhr.onreadystatechange = function() {
             if (xhr.readyState === 4 && xhr.status === 200) {
                 if (xhr.responseText == "exito") {
-                    alert("La taresa se ha guardado con exito");
+                    alert("Tarea guardada Correctamente");
                     tbl.innerHTML = "";
                     listar();
                 }
@@ -225,8 +225,7 @@ if (!isset($_SESSION["nombres"])) {
                     html = html + "<td>" + (filas[i].completada == true ? "si" : "no") + "</td>";
                     html = html + "<td>" + filas[i].prioridad + "</td>";
                     html = html + "<td><input type='button' name='btneliminar' class='btn btn-danger' value='Eliminar' onclick='EliminarTarea(" + filas[i].id + ")' /></td>";
-                    //html = html+"<td><a name='btneliminar' class='btn btn-danger' onclick='EliminarTarea(" + filas[i].id + ")><i class='fa fa-trash'></i></a></td>";
-                    html = html + "</tr>"; 
+                    html = html + "</tr>";
                 }
                 tbllista.innerHTML = html;
             }

@@ -54,10 +54,7 @@
 
 <table width="550" class="table table-hover">
                 <tr>
-                    <?php
-                    //echo "Usuario Logueado: " . $_SESSION["nombres"] . " " . $_SESSION["apellidos"];
-                    ?>
-
+                  
                     <td align="right">
 
 
