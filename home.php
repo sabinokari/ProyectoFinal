@@ -2,6 +2,8 @@
 session_start();
 if (!isset($_SESSION["nombres"])) {
     header("location:index.php");
+    //header("location:index.php");
+
 }
 ?>
 <!DOCTYPE html>
