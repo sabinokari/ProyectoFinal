@@ -12,13 +12,8 @@ if (!empty($_POST["btningresar"])) {
         $datosLogin= [];           
         if (mysqli_num_rows($result)) {
 
-            while ($datos = $result -> fetch_object()) { 
-                $datosLogin["id"]=$datos->idusuario;
-                $datosLogin["nombres"]=$datos->nombre;
-                $datosLogin["apellidos"]=$datos->apellido;
-                $datosLogin["usuario"]=$datos->usuario;
-                $datosLogin["contrasenia"]=$datos->contrasenia;
-            }
+
+            
            if(@$datosLogin["usuario"]==$usuario && @$datosLogin["contrasenia"]==$password){
                     $_SESSION["id"]= $datosLogin["id"];
                     $_SESSION["nombres"]= $datosLogin["nombres"];
